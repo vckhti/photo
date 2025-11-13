@@ -104,6 +104,11 @@
       </div>
     </div>
 
+    <rm-image-slider [images]="imageObject" #nav>
+    </rm-image-slider>
+<!--    <button (click)="prevImageClick()">Prev</button>-->
+<!--    <button (click)="nextImageClick()">Next</button>-->
+
     <!--    <img alt="Фотограф в Новосибирске" class="lazyload lazyunload" data-sizes="auto"
              ngSrc="/assets/images/1.jpg" width="539.281" height="808.812">-->
 
@@ -116,9 +121,10 @@
 
               <div class="post js-post" data-search-val="Свадебная фотосессия Динила и Екатерина">
                 <div class="post-inner">
-                  <div class="post-container arrow-container">
-                    <a class="post-miniature" href="/svadebnaya-fotosessiya-dinila-i-ekaterina">
+                  <div class="post-container arrow-container" (click)="sliderOpen(i)">
+                    <a class="post-miniature" >
                       <img alt="Фотограф в Новосибирске" class="lazyload lazyunload" data-sizes="auto"
+
                            ngSrc="/assets/images/{{item}}.jpg" width="539.281" height="808.812">
                     </a>
                     <div class="post-caption">
