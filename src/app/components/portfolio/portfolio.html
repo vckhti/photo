@@ -1,0 +1,93 @@
+
+<div class="sections-container -small-pad-before -small-pad-after -announcement_list-prefix -medium-width">
+  <div class="sections-container-inner">
+    <div class="section-container text-section wysiwyg">
+      <h1 style="text-align: center;">Репортажные фотосессии</h1>
+      <p style="text-align: justify;">
+        На &nbsp;этой странице вы &nbsp;можете познакомится с &nbsp;полноценными репортажными съемками, которые я
+        &nbsp;провел в &nbsp;разных локациях в том числе в Новосибирске.
+
+        <!--          так &nbsp;же можно познакомиться с <a
+                  href="/comments">отзывами</a>
+                  довольных клиентов, которые доверили мне запечатлить свой день.-->
+
+        Во &nbsp;время фотосъемки я &nbsp;помогаю
+        в &nbsp;позировании и &nbsp;использую дополнительный постоянный или импульсный свет, для создания ярких и
+        &nbsp;красочных фотографий. Ознакомьтесь с <a href="/services">выгодным
+        предложением</a>
+        по &nbsp;фото и &nbsp;видеосъемки вашего праздника. Обязательно <a
+        href="/contacts">свяжитесь со &nbsp;мной</a>
+        в &nbsp;одобном для вас месенджере.
+      </p>
+    </div>
+  </div>
+</div>
+<!--<div class="sections-container -small-pad-before -small-pad-after search-section">
+  <div class="sections-container-inner">
+    <form class="form">
+      <div class="search-input-container">
+        <input type="search" name="search" id="search" placeholder="Поиск" class="input "
+               autocomplete="off" data-search-target=".js-post">
+      </div>
+    </form>
+  </div>
+</div>-->
+
+
+<!--    <button (click)="prevImageClick()">Prev</button>-->
+<!--    <button (click)="nextImageClick()">Next</button>-->
+
+<!--    <img alt="Фотограф в Новосибирске" class="lazyload lazyunload" data-sizes="auto"
+         ngSrc="/assets/images/1.jpg" width="539.281" height="808.812">-->
+
+<div class="sections-container -small-pad-before -small-pad-after -large-width">
+  <div class="sections-container-inner">
+    <div class="section-container">
+
+      <div class="post-list -rows -announcement-list">
+        <ng-container *ngFor="let item of items; let i = index">
+          <div class="post js-post" >
+            <div class="post-inner">
+              <app-js-post-up
+                [item]=item
+                [orientationWidth]=539.281
+                [orientationHeight]=808.812
+                (itemClick)="sliderOpen(item-1)"
+              >
+              </app-js-post-up>
+            </div>
+          </div>
+
+        </ng-container>
+
+        <ng-container *ngFor="let item of anotherItems; let i = index">
+
+          <div class="post js-post" >
+            <div class="post-inner">
+
+              <app-js-post-up
+                [item]=item
+                [orientationWidth]=800
+                [orientationHeight]=600
+
+                (itemClick)="sliderOpen(item-1)"
+              >
+              </app-js-post-up>
+
+            </div>
+          </div>
+
+        </ng-container>
+      </div>
+
+      <div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="hiden">
+  <rm-image-slider [images]="imageObject" #nav>
+  </rm-image-slider>
+</div>

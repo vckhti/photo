@@ -4,16 +4,17 @@
       <div class="menu js-menu">
         <ul class="menu-list js-menu-list">
           <li class="menu-item js-menu-item" data-item-id="2489459">
-            <a class="link" href="/">Главная</a>
+            <a class="link" href="/">Портфолио</a>
           </li>
-          <li class="menu-item js-menu-item" data-item-id="2489461">
+<!--          <li class="menu-item js-menu-item" data-item-id="2489461">
             <a class="link" href="/portfolio">Портфолио</a>
           </li>
           <li class="menu-item js-menu-item" data-item-id="2745700">
             <a class="link" href="/family">Семейные</a>
           </li>
           <li class="menu-item js-menu-item " data-item-id="2489460">
-            <a class="link" href="/reportage">Репортажи</a>
+            <a class="link" href="/reportage">Репортажи</a>-->
+
             <!--<div class="submenu">
               <ul class="submenu-list">
                 <li class="menu-item js-menu-item" data-item-id="3338645">
@@ -53,19 +54,21 @@
                 </li>
               </ul>
             </div>-->
-          </li>
+
+
+<!--          </li>
           <li class="menu-item js-menu-item" data-item-id="2489483">
             <a class="link" href="/landscape">Пейзажи</a>
           </li>
           <li class="menu-item js-menu-item" data-item-id="2986671">
             <a class="link" href="/blog">Блог</a>
-          </li>
+          </li>-->
           <li class="menu-item js-menu-item" data-item-id="2489462">
             <a class="link" href="/services">Услуги</a>
           </li>
-          <li class="menu-item js-menu-item" data-item-id="2489463">
+<!--          <li class="menu-item js-menu-item" data-item-id="2489463">
             <a class="link" href="/comments">Отзывы</a>
-          </li>
+          </li>-->
           <li class="menu-item js-menu-item" data-item-id="2489464">
             <a class="link" href="/contacts">Контакты</a>
           </li>
@@ -74,90 +77,11 @@
     </div>
   </header>
   <main class="page-main js-main">
-    <div class="sections-container -small-pad-before -small-pad-after -announcement_list-prefix -medium-width">
-      <div class="sections-container-inner">
-        <div class="section-container text-section wysiwyg">
-          <h1 style="text-align: center;">Репортажные фотосессии</h1>
-          <p style="text-align: justify;">
-            На &nbsp;этой странице вы &nbsp;можете познакомится с &nbsp;полноценными репортажными съемками, которые я
-            &nbsp;провел в &nbsp;разных локациях в том числе в Новосибирске, так &nbsp;же можно познакомиться с <a
-            href="/comments">отзывами</a>
-            довольных клиентов, которые доверили мне запечатлить свой день. Во &nbsp;время фотосъемки я &nbsp;помогаю
-            в &nbsp;позировании и &nbsp;использую дополнительный постоянный или импульсный свет, для создания ярких и
-            &nbsp;красочных фотографий. Ознакомьтесь с &nbsp;<a href="/services">выгодным
-            предложением</a>
-            по &nbsp;фото и &nbsp;видеосъемки вашего праздника. Обязательно <a
-            href="/contacts">свяжитесь со &nbsp;мной</a>
-            в &nbsp;одобном для вас месенджере.
-          </p>
-        </div>
-      </div>
-    </div>
-    <div class="sections-container -small-pad-before -small-pad-after search-section">
-      <div class="sections-container-inner">
-        <form class="form">
-          <div class="search-input-container">
-            <input type="search" name="search" id="search" placeholder="Поиск" class="input "
-                   autocomplete="off" data-search-target=".js-post">
-          </div>
-        </form>
-      </div>
-    </div>
 
+    <router-outlet>
 
-    <!--    <button (click)="prevImageClick()">Prev</button>-->
-    <!--    <button (click)="nextImageClick()">Next</button>-->
+    </router-outlet>
 
-    <!--    <img alt="Фотограф в Новосибирске" class="lazyload lazyunload" data-sizes="auto"
-             ngSrc="/assets/images/1.jpg" width="539.281" height="808.812">-->
-
-    <div class="sections-container -small-pad-before -small-pad-after -large-width">
-      <div class="sections-container-inner">
-        <div class="section-container">
-
-          <div class="post-list -rows -announcement-list">
-            <ng-container *ngFor="let item of items; let i = index">
-              <div class="post js-post" data-search-val="Свадебная фотосессия Динила и Екатерина">
-                <div class="post-inner">
-                  <app-js-post-up
-                    [item]=item
-                    [orientationWidth]=539.281
-                    [orientationHeight]=808.812
-                    (itemClick)="sliderOpen(item-1)"
-                  >
-                  </app-js-post-up>
-                </div>
-              </div>
-
-            </ng-container>
-
-            <ng-container *ngFor="let item of anotherItems; let i = index">
-
-              <div class="post js-post" data-search-val="Свадебная фотосессия Динила и Екатерина">
-                <div class="post-inner">
-
-                  <app-js-post-up
-                    [item]=item
-                    [orientationWidth]=800
-                    [orientationHeight]=600
-
-                    (itemClick)="sliderOpen(item-1)"
-                  >
-                  </app-js-post-up>
-
-                </div>
-              </div>
-
-            </ng-container>
-          </div>
-
-          <div>
-
-          </div>
-
-        </div>
-      </div>
-    </div>
   </main>
   <footer class="page-footer">
     <div class="inner">
@@ -203,10 +127,7 @@
       </div>
     </div>
   </div>
-  <div class="hiden">
-    <rm-image-slider [images]="imageObject" #nav>
-    </rm-image-slider>
-  </div>
+
 </div>
 <div class="tracking-informer js-informer" data-informer-cookie-expires="365"
      data-informer-cookie-name="tracking-updated-at" data-informer-cookie-timestamp="1752663604">
@@ -220,6 +141,6 @@
     <img src="https://mc.yandex.ru/watch/104473362?ut=noindex" style="position:absolute; left:-9999px;" alt="">
   </div>
 </noscript>
-<a class="admin-link" data-role="admin-link" href="https://wfolio.ru/edit?page=2489461&amp;s=qZw9RX7e">
+<a class="admin-link" data-role="admin-link" href="/">
   <i class="fal fa-cog"></i>
 </a>
