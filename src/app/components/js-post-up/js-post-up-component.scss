@@ -1864,12 +1864,12 @@ form.form fieldset {
 }
 
 form.form input[type="text"],form.form input[type="password"],,form.form input[type="number"],form.form textarea,form.form select {
-  padding-right: 0;
-  padding-left: 0;
-  border: 0;
-  border-bottom: 1px solid var(--color-form-underline);
-  border-radius: 0
-}
+                                                                 padding-right: 0;
+                                                                 padding-left: 0;
+                                                                 border: 0;
+                                                                 border-bottom: 1px solid var(--color-form-underline);
+                                                                 border-radius: 0
+                                                               }
 
 form.form input[type="text"]:not(:last-child),form.form input[type="password"]:not(:last-child),form.form input[type="search"]:not(:last-child),form.form input[type="number"]:not(:last-child),form.form textarea:not(:last-child),form.form select:not(:last-child) {
   margin-bottom: 10px

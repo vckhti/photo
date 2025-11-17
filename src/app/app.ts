@@ -4,13 +4,14 @@ import {CommonModule, IMAGE_CONFIG, NgOptimizedImage} from '@angular/common';
 import {ImageObject, RmImageSliderComponent} from 'rm-image-slider';
 
 @Component({
+  standalone: false,
   selector: 'app-root',
-  imports: [
-    RouterOutlet,
+/*   imports: [
+   RouterOutlet,
     NgOptimizedImage,
     RmImageSliderComponent,
     CommonModule
-  ],
+  ],*/
   templateUrl: './app.html',
   styleUrl: './app.scss',
   providers: [
@@ -30,7 +31,8 @@ export class App {
   @ViewChild('nav') slider: any;
   any: any[] = [];
 
-  imageObject: Array<ImageObject> = [
+  imageObject: Array<ImageObject>
+/*    = [
     {
     image: 'assets/images/1.jpg',
     thumbImage: 'assets/images/1.jpeg',
@@ -52,25 +54,30 @@ export class App {
       title: '3',
       index: 3
     },
-  ];
+  ];*/
 
   constructor() {
-    for (let i = 1; i <= 34; i++) {
-      this.items.push(i)
-/*      this.any.push(
+    for (let i = 1; i <= 93; i++) {
+
+            this.any.push(
         {
-          image: 'assets/images/1.jpg',
-          thumbImage: 'assets/images/1.jpeg',
-          alt: 'alt of image',
-          title: `${i-1}`,
+          image: `assets/images/${i}.jpg`,
+          thumbImage: `assets/images/${i}.jpeg`,
+          alt: `${i}`,
+          title: `${i}`,
           index: i
         }
       );
-      this.imageObject = this.any;*/
+      this.imageObject = this.any;
+
+    }
+
+    for (let i = 1; i <= 36; i++) {
+      this.items.push(i)
     }
 
 
-    for (let i = 36; i <= 83; i++) {
+    for (let i = 37; i <= 93; i++) {
 
       this.anotherItems.push(i);
     }

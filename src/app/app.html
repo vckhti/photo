@@ -104,10 +104,9 @@
       </div>
     </div>
 
-    <rm-image-slider [images]="imageObject" #nav>
-    </rm-image-slider>
-<!--    <button (click)="prevImageClick()">Prev</button>-->
-<!--    <button (click)="nextImageClick()">Next</button>-->
+
+    <!--    <button (click)="prevImageClick()">Prev</button>-->
+    <!--    <button (click)="nextImageClick()">Next</button>-->
 
     <!--    <img alt="Фотограф в Новосибирске" class="lazyload lazyunload" data-sizes="auto"
              ngSrc="/assets/images/1.jpg" width="539.281" height="808.812">-->
@@ -118,26 +117,15 @@
 
           <div class="post-list -rows -announcement-list">
             <ng-container *ngFor="let item of items; let i = index">
-
               <div class="post js-post" data-search-val="Свадебная фотосессия Динила и Екатерина">
                 <div class="post-inner">
-                  <div class="post-container arrow-container" (click)="sliderOpen(i)">
-                    <a class="post-miniature" >
-                      <img alt="Фотограф в Новосибирске" class="lazyload lazyunload" data-sizes="auto"
-
-                           ngSrc="/assets/images/{{item}}.jpg" width="539.281" height="808.812">
-                    </a>
-                    <div class="post-caption">
-                      <time datetime="2025-08-06" class="post-date">6 августа 2025</time>
-                      <h3>
-                        <a class="post-title" href="/svadebnaya-fotosessiya-dinila-i-ekaterina">Свадебная фотосессия
-                          Динила и &nbsp;Екатерина</a>
-                      </h3>
-                      <a class="post-arrow" href="/svadebnaya-fotosessiya-dinila-i-ekaterina">
-                        <span class="arrow"></span>
-                      </a>
-                    </div>
-                  </div>
+                  <app-js-post-up
+                    [item]=item
+                    [orientationWidth]=539.281
+                    [orientationHeight]=808.812
+                    (itemClick)="sliderOpen(item-1)"
+                  >
+                  </app-js-post-up>
                 </div>
               </div>
 
@@ -147,22 +135,16 @@
 
               <div class="post js-post" data-search-val="Свадебная фотосессия Динила и Екатерина">
                 <div class="post-inner">
-                  <div class="post-container arrow-container">
-                    <a class="post-miniature" href="/svadebnaya-fotosessiya-dinila-i-ekaterina">
-                      <img alt="Фотограф в Новосибирске" class="lazyload lazyunload" data-sizes="auto"
-                           ngSrc="/assets/images/{{item}}.jpg" width="800" height="600">
-                    </a>
-                    <div class="post-caption">
-                      <time datetime="2025-08-06" class="post-date">6 августа 2025</time>
-                      <h3>
-                        <a class="post-title" href="/svadebnaya-fotosessiya-dinila-i-ekaterina">Свадебная фотосессия
-                          Динила и &nbsp;Екатерина</a>
-                      </h3>
-                      <a class="post-arrow" href="/svadebnaya-fotosessiya-dinila-i-ekaterina">
-                        <span class="arrow"></span>
-                      </a>
-                    </div>
-                  </div>
+
+                  <app-js-post-up
+                    [item]=item
+                    [orientationWidth]=800
+                    [orientationHeight]=600
+
+                    (itemClick)="sliderOpen(item-1)"
+                  >
+                  </app-js-post-up>
+
                 </div>
               </div>
 
@@ -181,14 +163,14 @@
     <div class="inner">
       <ul class="social-links js-social-links">
         <li class="item">
-          <a title="https://wa.me/79139444354" class="link" target="_blank" rel="noopener noreferrer"
-             href="https://wa.me/79139444354">
+          <a title="https://wa.me/79135456187" class="link" target="_blank" rel="noopener noreferrer"
+             href="https://wa.me/79135456187">
             <i class="fab fa-whatsapp"></i>
           </a>
         </li>
         <li class="item">
-          <a title="https://t.me/+79139444354" class="link" target="_blank" rel="noopener noreferrer"
-             href="https://t.me/+79139444354">
+          <a title="https://t.me/marimonov" class="link" target="_blank" rel="noopener noreferrer"
+             href="https://t.me/marimonov">
             <i class="fab fa-telegram-plane"></i>
           </a>
         </li>
@@ -200,9 +182,9 @@
           <a href="https://vk.com/id31080410">vk.com/id310804109</a>
         </p>
         <p>
-          <a href="https://t.me/stupakphoto">t.me/marimonov</a>
+          <a href="https://t.me/marimonov">t.me/marimonov</a>
         </p>
-        <p>+7-908-326-76-60</p>
+        <p>+7-913-545-61-87</p>
       </div>
       <!--      <div class="legal-links wysiwyg">
               <a target="_blank" href="/legal-terms">Оферта</a>
@@ -220,6 +202,10 @@
         <i class="fal fa-arrow-up"></i>
       </div>
     </div>
+  </div>
+  <div class="hiden">
+    <rm-image-slider [images]="imageObject" #nav>
+    </rm-image-slider>
   </div>
 </div>
 <div class="tracking-informer js-informer" data-informer-cookie-expires="365"
