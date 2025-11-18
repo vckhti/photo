@@ -6331,4 +6331,26 @@ img {
   block-size: auto;
 }
 
+.image{
+  display: block !important;
+  width: 100% !important;
+  opacity: 0 !important;
+}
 
+.placeholder{
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  filter: blur(10px) !important;
+}
+
+.image-loaded{
+  opacity: 1 !important;
+}
+
+.placeholder-loaded{
+  filter: none !important;
+}
+
+.arrow-container{
+  //background-image: url("/assets/images/portfolio/small/1.jpg");
+}

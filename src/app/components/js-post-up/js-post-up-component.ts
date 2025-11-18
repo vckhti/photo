@@ -13,4 +13,12 @@ export class JsPostUpComponent {
   @Input() orientationHeight: number = 600;
   @Output() itemClick = new EventEmitter<number>();
   protected readonly title = signal('photo');
+
+  isLoad = false;
+
+
+  onImageLoad(): void {
+    console.log('onImageLoad');
+    this.isLoad = true;
+  }
 }

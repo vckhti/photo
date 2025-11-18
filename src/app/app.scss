@@ -6055,10 +6055,11 @@ html {
   top: 0;
   right: 0;
   left: 0;
-  width: 100%;
+  width: 60%;
   padding: 24px 4%;
   transition: background 0.5s;
-  cursor: auto
+  cursor: auto;
+  margin: 0 auto;
 }
 
 .page-header .logo,.page-header .menu {
