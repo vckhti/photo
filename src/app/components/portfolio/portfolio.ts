@@ -73,7 +73,6 @@ export class Portfolio {
   }
 
   sliderOpen(index: number) {
-    console.log('index', index);
     this.slider.imageOnClick(index);
   }
 

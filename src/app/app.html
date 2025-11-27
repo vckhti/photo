@@ -4,7 +4,7 @@
       <div class="menu js-menu">
         <ul class="menu-list js-menu-list">
           <li class="menu-item js-menu-item" data-item-id="2489459">
-            <a class="link" href="/">Портфолио</a>
+            <a class="link" [routerLink]="['/']">Портфолио</a>
           </li>
 <!--          <li class="menu-item js-menu-item" data-item-id="2489461">
             <a class="link" href="/portfolio">Портфолио</a>
@@ -64,13 +64,13 @@
             <a class="link" href="/blog">Блог</a>
           </li>-->
           <li class="menu-item js-menu-item" data-item-id="2489462">
-            <a class="link" href="/services">Услуги</a>
+            <a class="link" [routerLink]="['/services']">Услуги</a>
           </li>
 <!--          <li class="menu-item js-menu-item" data-item-id="2489463">
             <a class="link" href="/comments">Отзывы</a>
           </li>-->
           <li class="menu-item js-menu-item" data-item-id="2489464">
-            <a class="link" href="/contacts">Контакты</a>
+            <a class="link" [routerLink]="['/contacts']">Контакты</a>
           </li>
         </ul>
       </div>
@@ -141,6 +141,6 @@
     <img src="https://mc.yandex.ru/watch/104473362?ut=noindex" style="position:absolute; left:-9999px;" alt="">
   </div>
 </noscript>
-<a class="admin-link" data-role="admin-link" href="/">
+<a class="admin-link" data-role="admin-link" [routerLink]="['/']">
   <i class="fal fa-cog"></i>
 </a>
