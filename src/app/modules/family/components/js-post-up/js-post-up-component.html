@@ -1,0 +1,42 @@
+
+
+
+
+    <div
+      class="post-container arrow-container"
+      (click)="itemClick.emit(item-1)"
+      [ngStyle]="{
+      'background-image': 'url(/assets/images/portfolio/small/family/'+item+'.jpg)'
+      }"
+      [ngClass]="{placeholder: true, 'placeholder-loaded': isLoad}"
+
+    >
+        <img
+          alt="Фотограф в Новосибирске"
+          class="lazyload lazyunload"
+          data-sizes="auto"
+          src="/assets/images/portfolio/small/family/{{item}}.jpg"
+          width="{{orientationWidth}}"
+          height="{{orientationHeight}}"
+          loading="lazy"
+          (load)="onImageLoad()"
+          [ngClass]="{image: true, 'image-loaded': isLoad}"
+
+
+        >
+      <!--
+
+
+      <div class="post-caption">
+                            <time datetime="2025-08-06" class="post-date">6 августа 2025</time>
+                            <h3>
+                              <a class="post-title" >Свадебная фотосессия
+                                Динила и &nbsp;Екатерина</a>
+                            </h3>
+                            <a class="post-arrow" >
+                              <span class="arrow"></span>
+                            </a>
+                          </div>-->
+    </div>
+
+
