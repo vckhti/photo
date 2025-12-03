@@ -6,12 +6,6 @@ import {ImageObject, RmImageSliderComponent} from 'rm-image-slider';
 @Component({
   standalone: false,
   selector: 'app-root',
-/*   imports: [
-   RouterOutlet,
-    NgOptimizedImage,
-    RmImageSliderComponent,
-    CommonModule
-  ],*/
   templateUrl: './app.html',
   styleUrl: './app.scss',
   providers: [

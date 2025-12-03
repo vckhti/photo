@@ -1,0 +1,61 @@
+
+<div class="sections-container -small-pad-before -small-pad-after -announcement_list-prefix -medium-width">
+  <div class="sections-container-inner">
+    <div class="section-container text-section wysiwyg">
+      <h1 style="text-align: center;">Съемка пейзажей</h1>
+<!--      <p style="text-align: justify;">
+        На этой странице вы можете познакомится с полноценными репортажными съемками, которые я
+        провел в разных локациях в том числе в Новосибирске.
+
+        &lt;!&ndash;          так же можно познакомиться с <a
+                  href="/comments">отзывами</a>
+                  довольных клиентов, которые доверили мне запечатлить свой день.&ndash;&gt;
+
+        Во время фотосъемки я помогаю
+        в позировании и использую дополнительный постоянный или импульсный свет, для создания ярких и
+        красочных фотографий. Ознакомьтесь с <a [routerLink]="['/services']">выгодным
+        предложением</a>
+        по фото и видеосъемки вашего праздника. Обязательно <a
+        [routerLink]="['/contacts']">свяжитесь со мной</a>
+        в удобном для вас месенджере.
+      </p>-->
+    </div>
+  </div>
+</div>
+
+<div class="sections-container -small-pad-before -small-pad-after -large-width">
+  <div class="sections-container-inner">
+    <div class="section-container">
+
+      <div class="post-list -rows -announcement-list">
+        <ng-container *ngFor="let item of items; let i = index">
+          <div class="post js-post" >
+            <div class="post-inner">
+              <app-js-post-up
+                [path]="'/assets/images/portfolio/small/landscape/'"
+                [item]=item
+                [orientationWidth]=539.281
+                [orientationHeight]=808.812
+                (itemClick)="sliderOpen(item-1)"
+              >
+              </app-js-post-up>
+            </div>
+          </div>
+        </ng-container>
+
+
+
+
+      </div>
+
+      <div>
+
+      </div>
+
+    </div>
+  </div>
+</div>
+<div class="hiden">
+  <rm-image-slider [images]="imageObject" #nav>
+  </rm-image-slider>
+</div>
