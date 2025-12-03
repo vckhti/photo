@@ -53,52 +53,11 @@
           <div class="post js-post" >
             <div class="post-inner">
               <app-js-post-up
+                [path]="'/assets/images/portfolio/small/'"
                 [item]=item
                 [orientationWidth]=539.281
                 [orientationHeight]=808.812
                 (itemClick)="sliderOpen(item-1)"
-              >
-              </app-js-post-up>
-            </div>
-          </div>
-        </ng-container>
-
-        <ng-container >
-          <div class="post js-post" >
-            <div class="post-inner">
-              <app-js-post-up
-                [item]=200
-                [orientationWidth]=539.281
-                [orientationHeight]=808.812
-                (itemClick)="sliderOpen(1-1)"
-              >
-              </app-js-post-up>
-            </div>
-          </div>
-        </ng-container>
-
-        <ng-container >
-          <div class="post js-post" >
-            <div class="post-inner">
-              <app-js-post-up
-                [item]=7
-                [orientationWidth]=539.281
-                [orientationHeight]=808.812
-                (itemClick)="sliderOpen(7-1)"
-              >
-              </app-js-post-up>
-            </div>
-          </div>
-        </ng-container>
-
-        <ng-container >
-          <div class="post js-post" >
-            <div class="post-inner">
-              <app-js-post-up
-                [item]=201
-                [orientationWidth]=539.281
-                [orientationHeight]=808.812
-                (itemClick)="sliderOpen(1-1)"
               >
               </app-js-post-up>
             </div>
@@ -111,6 +70,7 @@
             <div class="post-inner">
 
               <app-js-post-up
+                [path]="'/assets/images/portfolio/small/'"
                 [item]=item
                 [orientationWidth]=800
                 [orientationHeight]=600

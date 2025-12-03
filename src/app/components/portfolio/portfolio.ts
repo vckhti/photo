@@ -41,7 +41,7 @@ export class Portfolio {
     ];*/
 
   constructor() {
-    for (let i = 1; i <= 15; i++) {
+    for (let i = 1; i <= 18; i++) {
 
       this.any.push(
         {
@@ -56,12 +56,12 @@ export class Portfolio {
 
     }
 
-    for (let i = 1; i <= 6; i++) {
+    for (let i = 1; i <= 9; i++) {
       this.items.push(i)
     }
 
 
-    for (let i = 8; i <= 15; i++) {
+    for (let i = 10; i <= 18; i++) {
 
       this.anotherItems.push(i);
     }

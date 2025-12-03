@@ -3,18 +3,18 @@ import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {RouterModule} from '@angular/router';
 import {FamilyComponent} from './components/family-page/family';
 import {RmImageSliderComponent} from 'rm-image-slider';
-import {JsPostUpComponent} from './components/js-post-up/js-post-up-component';
 import {FamilyLayoutComponent} from './components/family-layout/family-layout.component';
+import {PostComponentsModule} from '../../shared/modules/post-components.module';
 
 
 @NgModule({
   declarations: [
     FamilyComponent,
     FamilyLayoutComponent,
-    JsPostUpComponent
   ],
   imports: [
     CommonModule,
+    PostComponentsModule,
     NgOptimizedImage,
     RmImageSliderComponent,
     RouterModule.forChild([

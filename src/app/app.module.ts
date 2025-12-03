@@ -4,11 +4,11 @@ import {App} from './app';
 import {RouterOutlet} from '@angular/router';
 import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {RmImageSliderComponent} from 'rm-image-slider';
-import {JsPostUpComponent} from './components/js-post-up/js-post-up-component';
 import {AppRoutingModule} from './app-routing.module';
 import {Services} from './components/services/services';
 import {Contacts} from './components/contacts/contacts';
 import {Portfolio} from './components/portfolio/portfolio';
+import {PostComponentsModule} from './shared/modules/post-components.module';
 
 
 
@@ -16,7 +16,6 @@ import {Portfolio} from './components/portfolio/portfolio';
 
 @NgModule({
   declarations: [
-    JsPostUpComponent,
     Portfolio,
     Services,
     Contacts,
@@ -25,6 +24,7 @@ import {Portfolio} from './components/portfolio/portfolio';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    PostComponentsModule,
     RouterOutlet,
     NgOptimizedImage,
     RmImageSliderComponent,

@@ -6,7 +6,7 @@
       class="post-container arrow-container"
       (click)="itemClick.emit(item-1)"
       [ngStyle]="{
-      'background-image': 'url(/assets/images/portfolio/small/'+item+'.jpg)'
+      'background-image': 'url('+path+item+'.jpg)'
       }"
       [ngClass]="{placeholder: true, 'placeholder-loaded': isLoad}"
 
@@ -15,7 +15,7 @@
           alt="Фотограф в Новосибирске"
           class="lazyload lazyunload"
           data-sizes="auto"
-          src="/assets/images/portfolio/small/{{item}}.jpg"
+          src="{{path+item}}.jpg"
           width="{{orientationWidth}}"
           height="{{orientationHeight}}"
           loading="lazy"

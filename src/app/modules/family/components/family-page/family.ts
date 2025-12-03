@@ -19,7 +19,7 @@ export class FamilyComponent {
 
   constructor() {
     console.log('FamilyComponent');
-    for (let i = 1; i <= 22; i++) {
+    for (let i = 1; i <= 24; i++) {
 
       this.any.push(
         {
@@ -39,7 +39,7 @@ export class FamilyComponent {
     }
 
 
-    for (let i = 13; i <= 21; i++) {
+    for (let i = 13; i <= 24; i++) {
 
       this.anotherItems.push(i);
     }

@@ -32,6 +32,7 @@
           <div class="post js-post" >
             <div class="post-inner">
               <app-js-post-up
+                [path]="'/assets/images/portfolio/small/family/'"
                 [item]=item
                 [orientationWidth]=539.281
                 [orientationHeight]=808.812
@@ -49,6 +50,7 @@
             <div class="post-inner">
 
               <app-js-post-up
+                [path]="'/assets/images/portfolio/small/family/'"
                 [item]=item
                 [orientationWidth]=800
                 [orientationHeight]=600
@@ -62,33 +64,7 @@
 
         </ng-container>
 
-        <ng-container >
-          <div class="post js-post" >
-            <div class="post-inner">
-              <app-js-post-up
-                [item]=400
-                [orientationWidth]=800
-                [orientationHeight]=600
-                (itemClick)="sliderOpen(21)"
-              >
-              </app-js-post-up>
-            </div>
-          </div>
-        </ng-container>
 
-        <ng-container >
-          <div class="post js-post" >
-            <div class="post-inner">
-              <app-js-post-up
-                [item]=22
-                [orientationWidth]=800
-                [orientationHeight]=600
-                (itemClick)="sliderOpen(21)"
-              >
-              </app-js-post-up>
-            </div>
-          </div>
-        </ng-container>
 
 
       </div>

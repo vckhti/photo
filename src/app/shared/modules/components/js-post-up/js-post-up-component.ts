@@ -8,6 +8,7 @@ import {Component, Input, Output, signal, EventEmitter} from '@angular/core';
     '.scss'
 })
 export class JsPostUpComponent {
+  @Input() path: string ;
   @Input() item: number;
   @Input() orientationWidth: number = 800;
   @Input() orientationHeight: number = 600;
