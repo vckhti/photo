@@ -6387,12 +6387,13 @@ div {
 
 
   .custom {
+    z-index: -1;
     background-image: url('/assets/images/186.jpg');
     height: 1103px;
     //height: 403px;
     width: 2402px;
     opacity: 0.6;
-    margin-top: -60px;
+    //margin-top: -60px;
 
     //border-radius: 50%;
     background-size: cover;
@@ -6404,4 +6405,27 @@ div {
       font-weight: bold;
     }
   }
+
+@media (max-width: 769px) {
+  .custom {
+    background-image: none;
+    height: 11px !important;
+    //height: 403px;
+    width: 24px!important;
+    margin: 0!important;
+    padding: 0!important;
+  }
+
+  .cover.-fullscreen {
+    background-image: none;
+    height: 11px !important;
+    //height: 403px;
+    width: 24px!important;
+    margin: 0!important;
+    padding: 0!important;
+    min-height: 1px !important;
+  }
+
+
+}
 

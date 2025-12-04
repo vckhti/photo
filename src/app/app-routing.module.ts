@@ -5,7 +5,7 @@ import {Contacts} from './components/contacts/contacts';
 
 
 const routes: Routes = [
-      {path: '', redirectTo: '/services', pathMatch: 'full'},
+      {path: '', redirectTo: '/about', pathMatch: 'full'},
       {path: 'services', component: Services},
       {path: 'contacts', component: Contacts},
   {

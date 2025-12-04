@@ -6055,11 +6055,10 @@ html {
   top: 0;
   right: 0;
   left: 0;
-  width: 60%;
+  width: 80%;
   padding: 24px 4%;
   transition: background 0.5s;
   cursor: auto;
-  margin: 0 auto;
 }
 
 .page-header .logo,.page-header .menu {
@@ -6327,28 +6326,41 @@ body.is-marketing-informer-visible .page-wrapper {
 
 }
 
-img {
-  max-inline-size: 100%;
-  block-size: auto;
+@media (min-width: 769px) {
+  p {
+    font-size: 24px;
+  }
+}
+
+.ava {
+  margin: 0 auto;
+  background-image: url('/assets/images/ava-1.jpg');
+  height: 300px;
+  //height: 403px;
+  width: 300px;
+  opacity: 1;
+
+  border-radius: 50%;
+  background-size: cover;
+}
+
+.link-style {
+  text-decoration: underline;
+  color: blue !important;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 @media (max-width: 769px) {
-  h1 {
-    font-size: 14px !important;
-    word-break: break-all !important;
-    padding-left: 80px !important;
+  h1{
+    font-size: 12px;
   }
   .inner {
-    position: static;
-    z-index: -1 !important;
+    position: fixed;
+    z-index: 300;
     top: 0;
     left: 0;
-    width: 30% !important;
 
+    width: 20% !important;
   }
-
-}
-
-header {
-  z-index: 1 !important;
 }
