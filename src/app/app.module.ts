@@ -11,6 +11,7 @@ import {PostComponentsModule} from './shared/modules/post-components.module';
 import {SportModule} from './modules/sport/sport.module';
 import {LandscapeModule} from './modules/landscape/landscape.module';
 import {PortfolioModule} from './modules/portfolio/portfolio.module';
+import {AboutModule} from './modules/about/about.module';
 
 
 
@@ -24,6 +25,7 @@ import {PortfolioModule} from './modules/portfolio/portfolio.module';
   ],
   imports: [
     BrowserModule,
+    AboutModule,
     PortfolioModule,
     SportModule,
     LandscapeModule,

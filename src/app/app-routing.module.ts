@@ -21,6 +21,9 @@ const routes: Routes = [
     path: 'landscape', loadChildren: () => import('./modules/landscape/landscape.module').then(m => m.LandscapeModule)
   },
   {
+    path: 'about', loadChildren: () => import('./modules/about/about.module').then(m => m.AboutModule)
+  },
+  {
     path: '**',
     component: Services,
   }
