@@ -41,7 +41,7 @@ export class Portfolio {
     ];*/
 
   constructor() {
-    console.log('Portfolio');
+    //console.log('Portfolio');
     for (let i = 1; i <= 18; i++) {
 
       this.any.push(

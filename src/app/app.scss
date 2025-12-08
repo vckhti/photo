@@ -6336,7 +6336,7 @@ img {
   h1 {
     font-size: 14px !important;
     word-break: break-all !important;
-    padding-left: 80px !important;
+
   }
   .inner {
     position: static;
@@ -6344,7 +6344,17 @@ img {
     top: 0;
     left: 0;
     width: 30% !important;
+  }
 
+  .inner_modify{
+    width: 100% !important;
+  }
+
+  .page-footer {
+    padding: 0 !important;
+  }
+  .page-header {
+    padding: 0 !important;
   }
 
 }

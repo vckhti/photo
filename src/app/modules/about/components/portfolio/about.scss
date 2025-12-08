@@ -6351,6 +6351,12 @@ body.is-marketing-informer-visible .page-wrapper {
   font-size: 18px;
 }
 
+.text-section {
+  p {
+    text-align: center;
+  }
+}
+
 @media (max-width: 769px) {
   h1{
     font-size: 12px;
@@ -6363,4 +6369,5 @@ body.is-marketing-informer-visible .page-wrapper {
 
     width: 20% !important;
   }
+
 }

@@ -36,7 +36,7 @@ export class Services {
     ];
 
   sliderOpen(index: number) {
-    console.log('index',index);
+    //console.log('index',index);
     this.slider.imageOnClick(index);
   }
 }

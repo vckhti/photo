@@ -1,5 +1,5 @@
 import {NgModule} from "@angular/core";
-import {CommonModule} from '@angular/common';
+import {CommonModule, NgOptimizedImage} from '@angular/common';
 import {JsPostUpComponent} from './components/js-post-up/js-post-up-component';
 
 
@@ -8,6 +8,7 @@ import {JsPostUpComponent} from './components/js-post-up/js-post-up-component';
     JsPostUpComponent
   ],
   imports: [
+    NgOptimizedImage,
     CommonModule,
   ],
   exports: [

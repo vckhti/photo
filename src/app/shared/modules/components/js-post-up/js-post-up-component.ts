@@ -19,7 +19,7 @@ export class JsPostUpComponent {
 
 
   onImageLoad(): void {
-    console.log('onImageLoad');
+    //console.log('onImageLoad');
     this.isLoad = true;
   }
 }

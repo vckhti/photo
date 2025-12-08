@@ -18,7 +18,7 @@ export class LandscapeComponent {
   imageObject: Array<ImageObject>
 
   constructor() {
-    console.log('LandScapeComponent');
+    //console.log('LandScapeComponent');
     for (let i = 1; i <= 20; i++) {
 
       this.any.push(

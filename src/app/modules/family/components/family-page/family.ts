@@ -18,7 +18,7 @@ export class FamilyComponent {
   imageObject: Array<ImageObject>
 
   constructor() {
-    console.log('FamilyComponent');
+    //console.log('FamilyComponent');
     for (let i = 1; i <= 24; i++) {
 
       this.any.push(

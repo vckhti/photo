@@ -18,8 +18,8 @@ export class SportComponent {
   imageObject: Array<ImageObject>
 
   constructor() {
-    console.log('SportComponent');
-    for (let i = 1; i <= 22; i++) {
+    //console.log('SportComponent');
+    for (let i = 1; i <= 24; i++) {
 
       this.any.push(
         {
